@@ -9,5 +9,11 @@
         }
         public string Name { get; private set; }
         public string Address { get; private set; }
+
+        public void Update(string name, string address)
+        {
+            Name = name;
+            Address = address;
+        }
     }
 }

@@ -25,5 +25,11 @@ namespace BuildingRegisterProject.Model.Entities
         {
             Expertises.Remove(expertise);
         }
+
+        public void Update(string name, string address)
+        {
+            Name = name;
+            Address = address;
+        }
     }
 }

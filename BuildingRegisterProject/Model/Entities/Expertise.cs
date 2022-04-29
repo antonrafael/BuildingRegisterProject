@@ -8,5 +8,10 @@ namespace BuildingRegisterProject.Model.Entities
             Name = Name;
         }
         public string Name { get; private set; }
+
+        public void Update(string name)
+        {
+            Name = name;
+        }
     }
 }

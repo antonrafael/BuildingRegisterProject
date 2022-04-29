@@ -8,13 +8,13 @@ namespace BuildingRegisterProject.ViewModel.Commands.BuildingCommands
 {
     public class AddExpertiseCommand : Notifiable, ICommand
     {
-        public AddExpertiseCommand(Guid buildingId, Expertise expertise)
+        public AddExpertiseCommand(Guid id, Expertise expertise)
         {
-            BuildingId = buildingId;
+            Id = id;
             Expertise = expertise;
         }
 
-        public Guid BuildingId { get; set; }
+        public Guid Id { get; set; }
         public Expertise Expertise { get; set; }
 
         public void Validate()
