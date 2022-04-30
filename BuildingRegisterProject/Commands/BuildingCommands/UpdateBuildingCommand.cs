@@ -1,9 +1,9 @@
-﻿using BuildingRegisterProject.ViewModel.Commands.Contracts;
+﻿using BuildingRegisterProject.Commands.Contracts;
 using Flunt.Notifications;
 using Flunt.Validations;
 using System;
 
-namespace BuildingRegisterProject.ViewModel.Commands.BuildingCommands
+namespace BuildingRegisterProject.Commands.BuildingCommands
 {
     public class UpdateBuildingCommand : Notifiable, ICommand
     {

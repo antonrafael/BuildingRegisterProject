@@ -1,14 +1,14 @@
-﻿using BuildingRegisterProject.ViewModel.Commands.Contracts;
+﻿using BuildingRegisterProject.Commands.Contracts;
 using BuildingRegisterProject.Model.Entities;
 using Flunt.Notifications;
 using Flunt.Validations;
 using System;
 
-namespace BuildingRegisterProject.ViewModel.Commands.BuildingCommands
+namespace BuildingRegisterProject.Commands.BuildingCommands
 {
-    public class AddExpertiseCommand : Notifiable, ICommand
+    public class RemoveExpertiseCommand : Notifiable, ICommand
     {
-        public AddExpertiseCommand(Guid id, Expertise expertise)
+        public RemoveExpertiseCommand(Guid id, Expertise expertise)
         {
             Id = id;
             Expertise = expertise;

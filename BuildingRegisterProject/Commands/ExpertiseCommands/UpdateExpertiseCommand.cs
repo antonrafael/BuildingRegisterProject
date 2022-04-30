@@ -1,21 +1,19 @@
-﻿using BuildingRegisterProject.ViewModel.Commands.Contracts;
+﻿using BuildingRegisterProject.Commands.Contracts;
 using Flunt.Notifications;
 using Flunt.Validations;
 using System;
 
-namespace BuildingRegisterProject.ViewModel.Commands.OwnerCommands
+namespace BuildingRegisterProject.Commands.ExpertiseCommands
 {
-    public class UpdateOwnerCommand : Notifiable, ICommand
+    public class UpdateExpertiseCommand : Notifiable, ICommand
     {
-        public UpdateOwnerCommand(Guid id, string name, string address)
+        public UpdateExpertiseCommand(Guid id, string name)
         {
             Id = id;
             Name = name;
-            Address = address;
         }
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public string Address { get; set; }
 
         public void Validate()
         {
@@ -23,7 +21,6 @@ namespace BuildingRegisterProject.ViewModel.Commands.OwnerCommands
                new Contract()
                    .Requires()
                    .HasMinLen(Name, 3, "Name", "The name is to short")
-                   .HasMinLen(Address, 6, "Address", "The address is to short")
                );
         }
     }

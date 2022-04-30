@@ -1,12 +1,12 @@
 ﻿using BuildingRegisterProject.Model.Entities;
 using BuildingRegisterProject.Repositories;
-using BuildingRegisterProject.ViewModel.Commands;
-using BuildingRegisterProject.ViewModel.Commands.Contracts;
-using BuildingRegisterProject.ViewModel.Commands.ExpertiseCommands;
-using BuildingRegisterProject.ViewModel.Handlers.Contracts;
+using BuildingRegisterProject.Commands;
+using BuildingRegisterProject.Commands.Contracts;
+using BuildingRegisterProject.Commands.ExpertiseCommands;
+using BuildingRegisterProject.Handlers.Contracts;
 using Flunt.Notifications;
 
-namespace BuildingRegisterProject.ViewModel.Handlers
+namespace BuildingRegisterProject.Handlers
 {
     public class ExpertiseHandler : 
         Notifiable,

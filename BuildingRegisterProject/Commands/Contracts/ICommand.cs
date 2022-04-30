@@ -1,6 +1,6 @@
 ﻿using Flunt.Validations;
 
-namespace BuildingRegisterProject.ViewModel.Commands.Contracts
+namespace BuildingRegisterProject.Commands.Contracts
 {
     public interface ICommand : IValidatable
     {

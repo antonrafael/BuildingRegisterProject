@@ -1,8 +1,8 @@
-﻿using BuildingRegisterProject.ViewModel.Commands.Contracts;
+﻿using BuildingRegisterProject.Commands.Contracts;
 using Flunt.Notifications;
 using Flunt.Validations;
 
-namespace BuildingRegisterProject.ViewModel.Commands.ExpertiseCommands
+namespace BuildingRegisterProject.Commands.ExpertiseCommands
 {
     public class CreateExpertiseCommand : Notifiable, ICommand
     {

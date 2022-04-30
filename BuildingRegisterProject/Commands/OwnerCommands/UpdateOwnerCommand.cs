@@ -1,17 +1,19 @@
-﻿using BuildingRegisterProject.ViewModel.Commands.Contracts;
+﻿using BuildingRegisterProject.Commands.Contracts;
 using Flunt.Notifications;
 using Flunt.Validations;
+using System;
 
-namespace BuildingRegisterProject.ViewModel.Commands.OwnerCommands
+namespace BuildingRegisterProject.Commands.OwnerCommands
 {
-    public class CreateOwnerCommand : Notifiable, ICommand
+    public class UpdateOwnerCommand : Notifiable, ICommand
     {
-        public CreateOwnerCommand(string name, string address)
+        public UpdateOwnerCommand(Guid id, string name, string address)
         {
+            Id = id;
             Name = name;
             Address = address;
         }
-
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
 
