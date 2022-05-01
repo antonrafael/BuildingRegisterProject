@@ -1,4 +1,4 @@
-﻿namespace BuildingRegisterProject.Model.Entities
+﻿namespace BuildingRegisterDomain.Model.Entities
 {
     public class Owner : Entity
     {

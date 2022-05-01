@@ -1,12 +1,12 @@
-﻿using BuildingRegisterProject.Model.Entities;
-using BuildingRegisterProject.Repositories;
-using BuildingRegisterProject.Commands;
-using BuildingRegisterProject.Commands.Contracts;
-using BuildingRegisterProject.Commands.ExpertiseCommands;
-using BuildingRegisterProject.Handlers.Contracts;
+﻿using BuildingRegisterDomain.Model.Entities;
+using BuildingRegisterDomain.Repositories;
+using BuildingRegisterDomain.Commands;
+using BuildingRegisterDomain.Commands.Contracts;
+using BuildingRegisterDomain.Commands.ExpertiseCommands;
+using BuildingRegisterDomain.Handlers.Contracts;
 using Flunt.Notifications;
 
-namespace BuildingRegisterProject.Handlers
+namespace BuildingRegisterDomain.Handlers
 {
     public class ExpertiseHandler : 
         Notifiable,
@@ -29,7 +29,7 @@ namespace BuildingRegisterProject.Handlers
                     "Is something wrong with your Expertise",
                     command.Notifications);
 
-            var expertise = new Expertise(command.Name);
+            var expertise = new Expertise(command.Name, command.Building);
 
             _repository.Create(expertise);
 

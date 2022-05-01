@@ -1,8 +1,8 @@
-﻿using BuildingRegisterProject.Commands.Contracts;
+﻿using BuildingRegisterDomain.Commands.Contracts;
 using Flunt.Notifications;
 using Flunt.Validations;
 
-namespace BuildingRegisterProject.Commands.OwnerCommands
+namespace BuildingRegisterDomain.Commands.OwnerCommands
 {
     public class CreateOwnerCommand : Notifiable, ICommand
     {

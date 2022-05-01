@@ -1,6 +1,6 @@
-﻿using BuildingRegisterProject.Commands.Contracts;
+﻿using BuildingRegisterDomain.Commands.Contracts;
 
-namespace BuildingRegisterProject.Commands
+namespace BuildingRegisterDomain.Commands
 {
     public class GenericCommandResult : ICommandResult
     {

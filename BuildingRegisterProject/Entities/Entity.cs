@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BuildingRegisterProject.Model.Entities
+namespace BuildingRegisterDomain.Model.Entities
 {
     public abstract class Entity
     {

@@ -1,9 +1,9 @@
-﻿using BuildingRegisterProject.Commands.Contracts;
-using BuildingRegisterProject.Model.Entities;
+﻿using BuildingRegisterDomain.Commands.Contracts;
+using BuildingRegisterDomain.Model.Entities;
 using Flunt.Notifications;
 using Flunt.Validations;
 
-namespace BuildingRegisterProject.Commands.BuildingCommands
+namespace BuildingRegisterDomain.Commands.BuildingCommands
 {
     public class CreateBuildingCommand : Notifiable, ICommand
     {

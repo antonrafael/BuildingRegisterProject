@@ -1,6 +1,6 @@
-﻿using BuildingRegisterProject.Commands.Contracts;
+﻿using BuildingRegisterDomain.Commands.Contracts;
 
-namespace BuildingRegisterProject.Handlers.Contracts
+namespace BuildingRegisterDomain.Handlers.Contracts
 {
     public interface IHandler<T> where T : ICommand
     {

@@ -1,12 +1,12 @@
-﻿using BuildingRegisterProject.Model.Entities;
-using BuildingRegisterProject.Repositories;
-using BuildingRegisterProject.Commands;
-using BuildingRegisterProject.Commands.Contracts;
-using BuildingRegisterProject.Commands.OwnerCommands;
-using BuildingRegisterProject.Handlers.Contracts;
+﻿using BuildingRegisterDomain.Model.Entities;
+using BuildingRegisterDomain.Repositories;
+using BuildingRegisterDomain.Commands;
+using BuildingRegisterDomain.Commands.Contracts;
+using BuildingRegisterDomain.Commands.OwnerCommands;
+using BuildingRegisterDomain.Handlers.Contracts;
 using Flunt.Notifications;
 
-namespace BuildingRegisterProject.Handlers
+namespace BuildingRegisterDomain.Handlers
 {
     public class OwnerHandler : 
         Notifiable,

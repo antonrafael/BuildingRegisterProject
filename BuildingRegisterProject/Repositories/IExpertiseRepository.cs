@@ -1,8 +1,8 @@
-﻿using BuildingRegisterProject.Model.Entities;
+﻿using BuildingRegisterDomain.Model.Entities;
 using System;
 using System.Collections.Generic;
 
-namespace BuildingRegisterProject.Repositories
+namespace BuildingRegisterDomain.Repositories
 {
     public interface IExpertiseRepository
     {

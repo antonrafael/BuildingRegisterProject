@@ -1,4 +1,4 @@
-﻿namespace BuildingRegisterProject.Commands.Contracts
+﻿namespace BuildingRegisterDomain.Commands.Contracts
 {
     public interface ICommandResult
     {

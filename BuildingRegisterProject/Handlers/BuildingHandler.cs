@@ -1,12 +1,12 @@
-﻿using BuildingRegisterProject.Model.Entities;
-using BuildingRegisterProject.Repositories;
-using BuildingRegisterProject.Commands;
-using BuildingRegisterProject.Commands.BuildingCommands;
-using BuildingRegisterProject.Commands.Contracts;
-using BuildingRegisterProject.Handlers.Contracts;
+﻿using BuildingRegisterDomain.Model.Entities;
+using BuildingRegisterDomain.Repositories;
+using BuildingRegisterDomain.Commands;
+using BuildingRegisterDomain.Commands.BuildingCommands;
+using BuildingRegisterDomain.Commands.Contracts;
+using BuildingRegisterDomain.Handlers.Contracts;
 using Flunt.Notifications;
 
-namespace BuildingRegisterProject.Handlers
+namespace BuildingRegisterDomain.Handlers
 {
     public class BuildingHandler :
         Notifiable,

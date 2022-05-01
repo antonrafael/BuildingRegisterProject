@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BuildingRegisterProject.Model.Entities
+namespace BuildingRegisterDomain.Model.Entities
 {
     public class Building : Entity
     {
